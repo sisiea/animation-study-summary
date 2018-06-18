@@ -1,0 +1,44 @@
+/**  demo1 */
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;  
+    transition: 2s width,2s height,2s background-color,2s transform;
+}
+.box1:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;  
+    transform: rotate(45deg);
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    transition-property: width,height,background-color,transform;
+    transition-duration: 2s;
+    transition-delay: 0s,0s,4s,0s;
+    transition-timing-function: steps(4,end),linear,ease-in-out,ease-out;
+
+}
+.box2:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;  
+    transform: rotate(45deg);
+}
+/**  demo1 */
+
+
+/**  demo2 */
+.box3{
+    width: 100px;
+    height: 0px;
+    background-color: #0000FF;
+    transition: height 2s;
+}
+.box3:hover {
+    height: auto;  
+}
+/**  demo2 */
